@@ -25,12 +25,14 @@ TEMPLATE = app
 
 
 SOURCES +=\
-    Source/Main.cpp 
+    Source/Main.cpp \
+	Source/MainWindow.cpp
 
 
 INCLUDEPATH += ./Headers
 
-HEADERS  +=
+HEADERS  +=\
+	Headers/MainWindow.h
 
 versioninfo.target = Headers/GitVersion.h
 versioninfo.commands = @mkdir -p Headers;\
